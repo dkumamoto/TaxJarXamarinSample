@@ -1,0 +1,24 @@
+{
+    "from_country": "US",
+    "from_zip": "92093",
+    "from_state": "CA",
+    "from_city": "La Jolla",
+    "from_street": "9500 Gilman Drive",
+    "to_country": "US",
+    "to_zip": "90002",
+    "to_state": "CA",
+    "to_city": "Los Angeles",
+    "to_street": "1335 E 103rd St",
+    "amount": 15,
+    "shipping": 1.5,
+    "line_items": [
+      {
+        "id": "1",
+        "quantity": 1,
+        "product_tax_code": "20010",
+        "unit_price": 15,
+        "discount": 0
+      }
+    ]
+  }
+  
