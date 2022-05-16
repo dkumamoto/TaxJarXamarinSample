@@ -14,11 +14,17 @@ zip code for displaying the combined tax rate.
 
 total order amount for displaying the calculated tax due for the order.
 
-I've tested the solution on M1 Macbook Pro, macOS 12.3.1
+I've tested the solution on 
+
+M1 Macbook Pro, macOS 12.3.1
+
 XCode 13.3.1
+
 VS Studio 2022 RC 2 (17.0 build 8904)
 
+
 iOS: iPhone 13, iOS 15.4.1
+
 Android: LG G8X ThinQ, Android 10
 
 
