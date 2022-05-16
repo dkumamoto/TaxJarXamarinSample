@@ -32,7 +32,7 @@ namespace taxcalc.Services.TaxCalculators
         HttpClient client;
         TaxJarConverters taxJarConverters;
 
-        public CalculatorTaxJar(bool productionFlag = false)
+        public CalculatorTaxJar(bool productionFlag = true)
         {
             if (productionFlag)
             {
