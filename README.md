@@ -7,6 +7,7 @@ the API key in the variable:
 
 ServerKey (currently null)
 
+Note: currently this app uses simulated tax service and always returns 0.08 for tax rate.
 
 The GUI supports only 2 inputs:
 
