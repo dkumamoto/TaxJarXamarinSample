@@ -25,8 +25,12 @@ VS Studio 2022 RC 2 (17.0 build 8904)
 
 <table>
   <tr>
-    <td>iOS: iPhone 13, iOS 16.1.1</td>
-    <td>Android: LG G8X ThinQ, Android 10</td>
+    <td>iOS: iPhone 13</td>
+    <td>Android: LG G8X ThinQ</td>
+  </tr>
+  <tr>
+    <td>iOS 16.1.1</td>
+    <td>Android 10</td>
   </tr>
   <tr>
     <td><img src="images/ios_screenshot.jpg" width="150" hspace="20"/></td>
