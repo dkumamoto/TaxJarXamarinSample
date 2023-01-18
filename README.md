@@ -17,20 +17,20 @@ total order amount for displaying the calculated tax due for the order.
 
 I've tested the solution on 
 
-M1 Macbook Pro, macOS 12.3.1
+M1 Macbook Pro, macOS 13.1
 
-XCode 13.3.1
+XCode 14.2
 
-VS Studio 2022 RC 2 (17.0 build 8904)
+VS Studio 2022 17.4.2 (build 17)
 
 <table>
   <tr>
-    <td>iOS: iPhone 13</td>
-    <td>Android: LG G8X ThinQ</td>
+    <td><center>iOS: iPhone 13</center></td>
+    <td><center>Android: LG G8X ThinQ</center></td>
   </tr>
   <tr>
-    <td>iOS 16.1.1</td>
-    <td>Android 10</td>
+    <td><center>iOS 16.1.1</center></td>
+    <td><center>Android 10</center></td>
   </tr>
   <tr>
     <td><img src="images/ios_screenshot.jpg" width="150" hspace="20"/></td>
