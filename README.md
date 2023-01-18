@@ -34,7 +34,7 @@ VS Studio 2022 RC 2 (17.0 build 8904)
   </tr>
   <tr>
     <td><img src="images/ios_screenshot.jpg" width="150" hspace="20"/></td>
-    <td><img src="images/android_screenshot.jpg" width="150" hspace="20"/></td>
+    <td><img src="images/android_screenshot.jpg" width="180" hspace="20"/></td>
   </tr>
 </table>
 
