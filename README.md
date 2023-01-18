@@ -26,12 +26,12 @@ VS Studio 2022 RC 2 (17.0 build 8904)
 
 iOS: iPhone 13, iOS 15.4.1
 
-[Sample screenshot from iOS](images/ios_screenshot.jpg)
+![Sample screenshot from iOS](images/ios_screenshot.jpg)
 
 
 Android: LG G8X ThinQ, Android 10
 
-[Sample screenshot from Android](images/android_screenshot.jpg)
+![Sample screenshot from Android](images/android_screenshot.jpg)
 
 
 Note about unit test: Could not test CalculateTaxOfOrder method with bad data.
