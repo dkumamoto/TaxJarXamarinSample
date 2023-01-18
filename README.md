@@ -25,16 +25,16 @@ VS Studio 2022 17.4.2 (build 17)
 
 <table>
   <tr>
-    <td><center>iOS: iPhone 13</center></td>
-    <td><center>Android: LG G8X ThinQ</center></td>
+    <td style="text-align: center">iOS: iPhone 13</td>
+    <td style="text-align: center">Android: LG G8X ThinQ</td>
   </tr>
   <tr>
-    <td><center>iOS 16.1.1</center></td>
-    <td><center>Android 10</center></td>
+    <td style="text-align: center">iOS 16.1.1</td>
+    <td style="text-align: center">Android 10</td>
   </tr>
   <tr>
-    <td><img src="images/ios_screenshot.jpg" width="150" hspace="20"/></td>
-    <td><img src="images/android_screenshot.jpg" width="160" hspace="20"/></td>
+    <td style="vertical-align: top"><img src="images/ios_screenshot.jpg" width="150" hspace="20"/></td>
+    <td style="vertical-align: top"><img src="images/android_screenshot.jpg" width="160" hspace="20"/></td>
   </tr>
 </table>
 
