@@ -1,5 +1,5 @@
 ﻿using System;
-
+using Xamarin.Essentials;
 using Android.App;
 using Android.Content.PM;
 using Android.Runtime;
@@ -17,6 +17,8 @@ namespace taxcalc.Droid
             Xamarin.Essentials.Platform.Init(this, savedInstanceState);
             global::Xamarin.Forms.Forms.Init(this, savedInstanceState);
             LoadApplication(new App());
+            var color = (Xamarin.Forms.Color)App.Current.Resources["BgColor"];
+            Window.SetStatusBarColor(ColorExtensions.ToPlatformColor(color));
         }
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {

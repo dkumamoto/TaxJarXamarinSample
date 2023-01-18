@@ -20,7 +20,7 @@ namespace taxcalc.Services.TaxCalculators
         static readonly string ServerURL = "https://api.taxjar.com/";
         static readonly string TestURL = "https://api.sandbox.taxjar.com/";
         static readonly string ServerKey = null;
-        static readonly string SandBoxKey = null;
+        static readonly string TestKey = null;
         static readonly string CommonRateAPI = "v2/rates/";
         static readonly string CommonCalcOrderAPI = "v2/taxes";
 
@@ -43,7 +43,7 @@ namespace taxcalc.Services.TaxCalculators
             }
             else
             {
-                CurrentKey = SandBoxKey;
+                CurrentKey = TestKey;
                 CurrentURL = TestURL;
                 CurrentTaxRate = TestURL + CommonRateAPI;
                 CurrentTaxOrder = TestURL + CommonCalcOrderAPI;

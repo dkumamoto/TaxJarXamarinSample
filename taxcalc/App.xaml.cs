@@ -26,7 +26,8 @@ namespace taxcalc
         void SetupServices()
         {
             var services = new ServiceCollection();
-            services.AddSingleton<ITaxCalculator, CalculatorTaxJar>();
+            //services.AddSingleton<ITaxCalculator, CalculatorTaxJar>();
+            services.AddSingleton<ITaxCalculator, CalculatorSim>();
             services.AddSingleton<ITaxService, TaxService>();
 
             services.AddTransient<CalculateTaxViewModel>();

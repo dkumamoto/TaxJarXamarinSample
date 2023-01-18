@@ -11,10 +11,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2012" />
-    <PackageReference Include="Xamarin.Essentials" Version="1.6.1" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
-    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2545" />
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.4" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Models\" />
@@ -28,6 +28,8 @@
     <None Remove="Newtonsoft.Json" />
     <None Remove="Microsoft.Extensions.DependencyInjection" />
     <None Remove="Services\Converts\" />
+    <None Remove="Resources\" />
+    <None Remove="Resources\Fonts\Myriad Pro Regular.ttf" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
@@ -38,5 +40,9 @@
     <Folder Include="Services\" />
     <Folder Include="Services\TaxCalculators\" />
     <Folder Include="DTO\TaxJar\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\Fonts\Myriad Pro Regular.ttf" />
   </ItemGroup>
 </Project>

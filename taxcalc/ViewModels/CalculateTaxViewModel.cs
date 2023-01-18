@@ -15,24 +15,34 @@ namespace taxcalc.ViewModels
 		private ITaxService _taxService;
 		private TaxJarConverters taxJarConverters;
 		private Order _order;
+		private Thickness _framePadding;
+		public Thickness FramePadding
+		{
+			get => _framePadding;
+			set { 
+				_framePadding = value;
+				OnPropertyChanged(nameof(FramePadding));
+			}
+		}
 		public CalculateTaxViewModel(ITaxService taxService)
 		{
 			_taxService = taxService;
-			TitleText = "taxcal";
-			MainTitle = "Zip used to get tax Rate";
+			TitleText = "taxcalc";
+			MainTitle = "Zip used to get Tax Rate";
 			ZipLabel = "Zipcode:";
 			ZipEntryText = "";
-			ZipEntryPlaceholder = "enter zipcode";
+			ZipEntryPlaceholder = "Enter zipcode";
 			RateLabel = "Rate:";
 			RateButtonLabel = "Get Rate";
 
 			OrderTitle = "Amount used to calculate Tax Due";
 			OrderLabel = "Amount:";
 			OrderEntryText = "";
-			OrderEntryPlaceholder = "Enter order amount (unit price)";
+			OrderEntryPlaceholder = "Enter order amount";
 			TaxDueLabel = "Tax Due:";
 			TaxDueValueLabel = "";
 			TaxDueButtonLabel = "Calculate Tax Due";
+			FramePadding = new Thickness(35);
 
 			taxJarConverters = new TaxJarConverters();
 			string orderStr = @"{ ""from_country"": ""US"", ""from_zip"": ""92093"", ""from_state"": ""CA"", ""from_city"": ""La Jolla"", ""from_street"": ""9500 Gilman Drive"", ""to_country"": ""US"", ""to_zip"": ""90002"", ""to_state"": ""CA"", ""to_city"": ""Los Angeles"", ""to_street"": ""1335 E 103rd St"", ""amount"": 15, ""shipping"": 1.5, ""line_items"": [ { ""id"": ""1"", ""quantity"": 1, ""product_tax_code"": ""20010"", ""unit_price"": 15, ""discount"": 0 } ] } ";

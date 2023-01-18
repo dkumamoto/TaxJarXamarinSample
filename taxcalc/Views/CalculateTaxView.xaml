@@ -2,24 +2,101 @@
 <ContentPage
     xmlns="http://xamarin.com/schemas/2014/forms"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:taxcalc.ViewModels"
+    x:DataType="local:CalculateTaxViewModel"
+    BackgroundColor="{StaticResource BgColor}"
     x:Class="taxcalc.Views.CalculateTaxView">
-    <ContentPage.Content>
-        <StackLayout>
-            <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-                <Label Text="{Binding TitleText}" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+        
+        <StackLayout BackgroundColor="White" >
+            <Frame x:Name="TitleFrame" BackgroundColor="{StaticResource BgColor}" Padding="{Binding FramePadding}" CornerRadius="0" BorderColor="{StaticResource BgColor}"
+                   >
+                <Label Text="{Binding TitleText}"
+                       HorizontalTextAlignment="Center"
+                       VerticalTextAlignment="Center"
+                       FontFamily="NormalFont"
+                       TextColor="White" FontSize="42"/>
+
             </Frame>
-            <Label Text="{Binding MainTitle}" FontSize="Title" Padding="30,10,30,10"/>
-            <Label Text="{Binding ZipLabel}" FontSize="Body" Padding="30,10,30,10"/>
-            <Entry Text="{Binding ZipEntryText}" Placeholder = "{Binding ZipEntryPlaceholder}" />
-            <Label Text="{Binding RateLabel}" FontSize="Body" Padding="30,10,30,10"/>
-            <Label Text="{Binding RateValueLabel}" FontSize="Body" Padding="30,10,30,10"/>
-            <Button Command="{Binding RateFromZipCommand}" Text="{Binding RateButtonLabel}" FontSize="Body" />
-            <Label Text="{Binding OrderTitle}" FontSize="Title" Padding="30,10,30,10"/>
-            <Label Text="{Binding OrderLabel}" FontSize="Body" Padding="30,10,30,10"/>
-            <Entry Text="{Binding OrderEntryText}" Placeholder = "{Binding OrderEntryPlaceholder}" />
-            <Label Text="{Binding TaxDueLabel}" FontSize="Body" Padding="30,10,30,10"/>
-            <Label Text="{Binding TaxDueValueLabel}" FontSize="Body" Padding="30,10,30,10"/>
-            <Button Command="{Binding TaxDueFromOrderCommand}" Text="{Binding TaxDueButtonLabel}" FontSize="Body" />
+                <Label Text="{Binding MainTitle}"
+                       FontSize="Subtitle"
+                       FontFamily="NormalFont"
+                       TextColor="Black"
+                       Padding="30,5,20,5" Margin="20,5,10,5"/>
+            <Grid Padding="20" >
+                <BoxView BackgroundColor="{StaticResource BoxColor}" CornerRadius="25" />
+                <StackLayout Margin="30, 5, 30, 5" Padding="0,10,0,10"
+                              >
+                    <Label Text="{Binding ZipLabel}"
+                           FontSize="Body"
+                           FontFamily="NormalFont"
+                           TextColor="Black" />
+                    <Entry Text="{Binding ZipEntryText}" Placeholder = "{Binding ZipEntryPlaceholder}"
+                           BackgroundColor="Transparent" Margin="0,5,0,5"
+                           TextColor="Black"
+                           FontFamily="NormalFont"
+                           PlaceholderColor="DarkGray"
+                           />
+                    <StackLayout Orientation="Horizontal">
+                    <Label Text="{Binding RateLabel}"
+                           FontSize="Body"
+                           FontFamily="NormalFont"
+                           TextColor="Black" />
+                    <Label Text="{Binding RateValueLabel}"
+                           FontSize="Body"
+                           FontFamily="NormalFont"
+                           TextColor="Black"
+                           />
+                        </StackLayout>
+                </StackLayout>
+            </Grid>
+            <Button Command="{Binding RateFromZipCommand}" Text="{Binding RateButtonLabel}"
+                    FontSize="Body"
+                    FontFamily="NormalFont"
+                    BackgroundColor="{StaticResource ButtonColor}"
+                    TextColor="White"
+                    Padding="10"
+                    Margin="30,5,30,5"
+                    CornerRadius="25"/>
+            <Label Text="{Binding OrderTitle}"
+                   FontSize="Subtitle"
+                   FontFamily="NormalFont"
+                   TextColor="Black"
+                   Padding="30,5,20,5" Margin="20,5,10,5" />
+            <Grid Padding="20" >
+                <BoxView BackgroundColor="{StaticResource BoxColor}" CornerRadius="25" />
+                <StackLayout Margin="30, 5, 30, 5" Padding="0,10,0,10"
+                              >
+                    <Label Text="{Binding OrderLabel}"
+                           FontFamily="NormalFont"
+                           FontSize="Body"
+                           TextColor="Black" />
+                    <Entry Text="{Binding OrderEntryText}"
+                           FontFamily="NormalFont"
+                           TextColor="Black"
+                           PlaceholderColor="DarkGray"
+                           BackgroundColor="Transparent"
+                           Margin="0,5,0,5"
+                           Placeholder = "{Binding OrderEntryPlaceholder}" />
+                    <StackLayout Orientation="Horizontal">
+                        <Label Text="{Binding TaxDueLabel}"
+                               FontFamily="NormalFont"
+                               FontSize="Body"
+                               TextColor="Black" />
+                        <Label Text="{Binding TaxDueValueLabel}"
+                               FontFamily="NormalFont"
+                               FontSize="Body"
+                               TextColor="Black" />
+                    </StackLayout>
+                </StackLayout>
+            </Grid>
+            <Button Command="{Binding TaxDueFromOrderCommand}" Text="{Binding TaxDueButtonLabel}"
+                    FontFamily="NormalFont"
+                    FontSize="Body"
+                    BackgroundColor="{StaticResource ButtonColor}"
+                    TextColor="White"
+                    Padding="10"
+                    Margin="30,5,30,5"
+                    CornerRadius="25" />
+
         </StackLayout>
-    </ContentPage.Content>
 </ContentPage>

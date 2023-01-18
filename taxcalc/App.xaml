@@ -3,6 +3,10 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="taxcalc.App">
     <Application.Resources>
-
+        <ResourceDictionary>
+            <Color x:Key="BgColor">#202F62</Color>
+            <Color x:Key="BoxColor">#e9edf6</Color>
+            <Color x:Key="ButtonColor">#436CF2</Color>
+        </ResourceDictionary>
     </Application.Resources>
 </Application>
